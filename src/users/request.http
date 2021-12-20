@@ -1,0 +1,11 @@
+@URL = http://localhost:3000
+@ROUTE= auth
+
+###Create new user
+POST {{URL}}/{{ROUTE}}/signup
+content-type: application/json
+
+{
+  "email": "pipe@test.com",
+  "password": "12345678"
+}
